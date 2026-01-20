@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <title>QuestOnChain</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -12,13 +14,11 @@
   <!-- Header -->
   <header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
     <div class="flex items-center gap-3">
-      <!-- Logo -->
       <img
         src="logo.png"
         alt="QuestOnChain Logo"
         class="w-10 h-10 rounded-lg object-contain"
       />
-      <!-- Project Name -->
       <h1 class="text-xl font-semibold tracking-wide text-white">
         QuestOnChain
       </h1>
@@ -30,30 +30,37 @@
     <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
       Knowledge is Value<br />On Chain
     </h2>
+
     <p class="mt-6 text-lg text-gray-400">
       To build a decentralized, blockchain-based knowledge quest and incentive platform,
       where knowledge becomes a quantifiable, transferable, and incentivized value asset.
     </p>
+
     <div class="mt-10 flex justify-center gap-4">
       <button class="px-6 py-3 rounded-xl bg-[#4F7CFF] text-white font-medium hover:opacity-90 transition">
         Start Quest
       </button>
-      <button class="px-6 py-3 rounded-xl border border-gray-600 text-gray-300 hover:border-[#4F7CFF] hover:text-[#4F7CFF] transition">
-        View Docs
-      </button>
+
+      <a
+        href="docs/whitepaper.pdf"
+        target="_blank"
+        class="px-6 py-3 rounded-xl border border-gray-600 text-gray-300 hover:border-[#4F7CFF] hover:text-white transition"
+      >
+        View Docs (PDF)
+      </a>
     </div>
   </section>
 
   <!-- Features -->
   <section class="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-3 gap-6">
-
     <!-- Feature 1 -->
     <div class="rounded-xl bg-[#181F3A] border border-[#2A3158] p-6 hover:-translate-y-1 transition">
       <h3 class="text-xl font-semibold text-white mb-3">
         Create Questions
       </h3>
       <p class="text-gray-400 text-sm leading-relaxed">
-        Submit high-quality questions to the platform and earn rewards when challengers answer incorrectly.
+        Anyone can create knowledge-based questions on-chain and define incentives
+        through smart contracts.
       </p>
     </div>
 
@@ -63,7 +70,8 @@
         Challenge Knowledge
       </h3>
       <p class="text-gray-400 text-sm leading-relaxed">
-        Participate in knowledge quests and test your understanding across various topics on-chain.
+        Participants challenge questions transparently, with answers verified
+        and settled on-chain.
       </p>
     </div>
 
@@ -73,20 +81,27 @@
         Earn On Chain
       </h3>
       <p class="text-gray-400 text-sm leading-relaxed">
-        All actions are executed and settled by smart contracts,
-        ensuring transparency and fairness.
+        Rewards are distributed automatically by smart contracts,
+        ensuring fairness and trustlessness.
       </p>
     </div>
-
   </section>
 
   <!-- Footer -->
   <footer class="border-t border-[#2A3158] py-10 text-center text-sm text-gray-500">
     <div class="flex justify-center gap-6 mb-4">
-      <a href="#" class="hover:text-[#4F7CFF] transition">X</a>
-      <a href="#" class="hover:text-[#4F7CFF] transition">GitHub</a>
-      <a href="#" class="hover:text-[#4F7CFF] transition">Docs</a>
+      <a href="https://x.com/QuestOnChain" class="hover:text-[#4F7CFF] transition">X</a>
+      <a href="https://t.me/questonchain_channel" class="hover:text-[#4F7CFF] transition">Channel</a>
+      <a href="https://t.me/questonchain" class="hover:text-[#4F7CFF] transition">Community</a>
+      <a
+        href="docs/whitepaper.pdf"
+        target="_blank"
+        class="hover:text-[#4F7CFF] transition"
+      >
+        Docs
+      </a>
     </div>
+
     © <span id="year"></span> QuestOnChain · Knowledge is Value
   </footer>
 
